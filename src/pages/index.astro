@@ -6,6 +6,7 @@ const obj = {
 	number: num,
 	favorites: ["astro", "css", "js"]
 }
+const isVisible = false; //state
 ---
 
 <html lang="en">
@@ -17,6 +18,10 @@ const obj = {
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>{obj.favorites[1].toUpperCase()}</h1>
+	  {
+		isVisible &&
+         <h1>{obj.favorites[1].toUpperCase()}</h1>
+	  }
+		
 	</body>
 </html>
