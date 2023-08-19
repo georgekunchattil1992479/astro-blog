@@ -19,8 +19,9 @@ const isVisible = false; //state
 	</head>
 	<body>
 	  {
-		isVisible &&
-         <h1>{obj.favorites[1].toUpperCase()}</h1>
+		isVisible
+		? <h1>{obj.favorites[1].toUpperCase()}</h1>
+		: <h1>{obj.favorites[0].toUpperCase()}</h1>
 	  }
 		
 	</body>
